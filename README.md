@@ -8,12 +8,9 @@ This week focused on improving model performance using **ensemble learning techn
 
 ```
 week_7/
-├── error_decomposition.ipynb
-├── bagging_random_forest.ipynb
-├── boosting_adaboost.ipynb
-├── boosting_gradientboosting.ipynb
-├── boosting_xgboost.ipynb
-├── hyperparameter_tuning.ipynb
+├── baggin_implementation.ipynb
+├── adaboost_implementation.ipynb
+├── hyperparameter_tunning_with_xgboost.ipynb
 └── README.md
 ```
 
@@ -31,16 +28,6 @@ week_7/
 ---
 
 ## File Overview
-
-### `error_decomposition.ipynb`
-
-* **Objective**: Visualize and understand the bias–variance trade-off.
-* **What it does**:
-
-  * Simulates models with varying complexity (e.g., underfit, overfit).
-  * Plots learning curves to illustrate training and validation error behavior.
-  * Demonstrates how error decomposes into bias², variance, and noise.
-* **Key takeaway**: Helps diagnose and interpret model performance issues.
 
 
 ### `bagging_implementation.ipynb`
@@ -78,43 +65,8 @@ week_7/
 
 
 
-### `boosting_gradientboosting.ipynb`
 
-* **Objective**: Implement and tune Gradient Boosting models.
-* **What it does**:
 
-  * Uses gradient descent to minimize loss by fitting residuals stage-wise.
-  * Compares different loss functions (squared error, Huber, log-loss).
-  * Visualizes decision boundaries and training convergence.
-* **Key takeaway**: Shows how gradient boosting improves bias and model flexibility.
-
----
-
-### `boosting_xgboost.ipynb`
-
-* **Objective**: Use XGBoost to build optimized, scalable boosting models.
-* **What it does**:
-
-  * Applies `XGBClassifier` to classification problems.
-  * Explains the use of second-order derivatives (Hessians) for optimization.
-  * Implements L1/L2 regularization, shrinkage, and subsampling.
-  * Analyzes training speed and model performance.
-* **Key takeaway**: Illustrates the efficiency and robustness of XGBoost.
-
----
-
-### `hyperparameter_tuning.ipynb`
-
-* **Objective**: Tune ensemble model hyperparameters to improve performance.
-* **What it does**:
-
-  * Compares `GridSearchCV` and `RandomizedSearchCV` for tuning.
-  * Tunes parameters like `max_depth`, `n_estimators`, and `learning_rate`.
-  * Applies to Random Forest, AdaBoost, and XGBoost models.
-  * Uses cross-validation scores to select best configurations.
-* **Key takeaway**: Highlights the importance of model tuning for generalization.
-
----
 
 
 ## Summary

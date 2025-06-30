@@ -83,12 +83,6 @@ essemble-learning-stragegies/
 * **Key takeaway**: Combining comprehensive text preprocessing, metadata features, and XGBoost with hyperparameter tuning can substantially boost performance in text classification tasks.
 
 
-
-
-
-
-
-
 ## Summary
 
 This week’s work combined theoretical foundations with practical implementation of ensemble learning. The notebooks are designed to progressively demonstrate how to reduce prediction error, increase model stability, and improve generalization through boosting and bagging methods culminating in fine-tuned, high-performing models using techniques like XGBoost and hyperparameter search.
@@ -100,5 +94,4 @@ This week’s work combined theoretical foundations with practical implementatio
 
 * [Main Fellowship Repository](https://github.com/KushalRegmi61/AI_Fellowship_FuseMachines)
 
----
 

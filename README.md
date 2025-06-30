@@ -47,7 +47,7 @@ essemble-learning-stragegies/
   * Uses **feature importances** from Random Forest for **feature selection**.
 * **Key takeaway**: Explores how randomness in sampling and features enhances ensemble robustness and reduces variance.
 
->Implementation File:  [bagging_implementaion.ipynb](/notebooks//bagging_implementation.ipynb)
+
 ---
 
 
@@ -63,7 +63,7 @@ essemble-learning-stragegies/
   * Conducted comprehensive tuning (including `ccp_alpha`), achieving **95% accuracy**.
 * **Key takeaway**: AdaBoost significantly outperforms a single decision tree, especially when combined with feature scaling and hyperparameter tuning.
 
->Implementation File: [adaboost_implementation.ipynb](./notebooks//adaboost_implementation.ipynb)
+
 
 --- 
 ### [`xgboost_text_classification.ipynb`](/notebooks/xgboost_text_classification.ipynb)
@@ -82,7 +82,7 @@ essemble-learning-stragegies/
 
 * **Key takeaway**: Combining comprehensive text preprocessing, metadata features, and XGBoost with hyperparameter tuning can substantially boost performance in text classification tasks.
 
->Implementation File:  [xgboost_text_classification.ipynb](/notebooks/xgboost_text_classification.ipynb)
+
 
 
 

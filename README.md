@@ -7,10 +7,11 @@ This week focused on improving model performance using **ensemble learning techn
 ## Repository Structure
 
 ```
-week_7/
-├── baggin_implementation.ipynb
-├── adaboost_implementation.ipynb
-├── hyperparameter_tunning_with_xgboost.ipynb
+essemble-learning-stragegies/
+├── notebooks/
+│   ├── adaboost_implementation.ipynb
+│   ├── bagging_implementation.ipynb
+│   └── xgboost_text_classification.ipynb
 └── README.md
 ```
 
@@ -30,7 +31,7 @@ week_7/
 ## File Overview
 
 
-### `bagging_implementation.ipynb`
+### [`bagging_implementation.ipynb`](/notebooks/bagging_implementation.ipynb)
 
 * **Objective**: Develop a hands-on understanding of Bagging and Random Forest through both custom and scikit-learn implementations.
 * **What it does**:
@@ -46,10 +47,11 @@ week_7/
   * Uses **feature importances** from Random Forest for **feature selection**.
 * **Key takeaway**: Explores how randomness in sampling and features enhances ensemble robustness and reduces variance.
 
+>Implementation File:  [bagging_implementaion.ipynb](/notebooks//bagging_implementation.ipynb)
 ---
 
 
-### `adaboost_implementation.ipynb`
+### [`adaboost_implementation.ipynb`](/notebooks/adaboost_implementation.ipynb)
 
 * **Objective**: Improve model performance using AdaBoost with a pruned decision tree base learner.
 * **What it does**:
@@ -61,8 +63,26 @@ week_7/
   * Conducted comprehensive tuning (including `ccp_alpha`), achieving **95% accuracy**.
 * **Key takeaway**: AdaBoost significantly outperforms a single decision tree, especially when combined with feature scaling and hyperparameter tuning.
 
+>Implementation File: [adaboost_implementation.ipynb](./notebooks//adaboost_implementation.ipynb)
 
+--- 
+### [`xgboost_text_classification.ipynb`](/notebooks/xgboost_text_classification.ipynb)
 
+* **Objective**: Build a high-performance text classification model using XGBoost, enhanced with metadata features and robust preprocessing.
+
+* **What it does**:
+
+  * Loaded a clean news dataset and performed exploratory data analysis (no missing values).
+  * Developed a custom `TextPreprocessor` class with advanced text cleaning (stopword removal, lemmatization, etc.).
+  * Built a baseline Multinomial Naive Bayes model using `CountVectorizer`, achieving **95% F1-score**.
+  * Engineered metadata features (text length, punctuation counts) and combined them with text data.
+  * Created a flexible `Pipeline` using `ColumnTransformer` to process mixed feature types.
+  * Trained an XGBoost model with hyperparameter tuning via `RandomizedSearchCV`, reaching **99% F1-score**.
+  * Compared baseline vs. boosted model performance, showing a **4% improvement**.
+
+* **Key takeaway**: Combining comprehensive text preprocessing, metadata features, and XGBoost with hyperparameter tuning can substantially boost performance in text classification tasks.
+
+>Implementation File:  [xgboost_text_classification.ipynb](/notebooks/xgboost_text_classification.ipynb)
 
 
 
@@ -71,7 +91,7 @@ week_7/
 
 ## Summary
 
-This week’s work combined theoretical foundations with practical implementation of ensemble learning. The notebooks are designed to progressively demonstrate how to reduce prediction error, increase model stability, and improve generalization through boosting and bagging methods—culminating in fine-tuned, high-performing models using techniques like XGBoost and hyperparameter search.
+This week’s work combined theoretical foundations with practical implementation of ensemble learning. The notebooks are designed to progressively demonstrate how to reduce prediction error, increase model stability, and improve generalization through boosting and bagging methods culminating in fine-tuned, high-performing models using techniques like XGBoost and hyperparameter search.
 
 ---
 
